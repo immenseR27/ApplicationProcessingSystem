@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel = "stylesheet" href = "../static/style.css">
+        <title>AbricosGroup</title><br>
+    </head>
+    <body>
+        <h1>Стань частью команды AbricosGroup</h1>
+
+
+  <div id="container">
+  <h1>Заполните заявку</h1>
+    <form method="POST" action="/send" enctype="multipart/form-data">
+
+        <label for="position">Вакансия</label>
+        <select id="position" name="position" required="required">
+            {% for opt in option %}
+                <option value="{{ opt[0] }}">{{opt[1]}}</option>
+            {% endfor %}
+        </select><br>
+
+        <label for="surname">Фамилия</label><input type="text" name="surname" id="surname"><br>
+        <label for="name">Имя</label><input type="text" name="name" id="name"><br>
+        <label for="patronymic">Отчество</label><input type="text" name="patronymic" id="patronymic"><br>
+        <label for="birthday">Дата рождения</label><input type="date" name="birthday" id="birthday"><br>
+        <label for="experience">Опыт работы</label><input type="text" name="experience" id="experience"><br>
+        <label for="mail">Эл. почта</label><input type="text" name="mail" id="mail"><br>
+        <label for="phone">Телефон</label><input type="text" name="phone" id="phone"><br>
+        <label for="video">Видеоинтервью</label><input type="file" name="video" id="video">
+    <button type="submit">Отправить</button>
+    </form>
+</div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+﻿html {
+  background: url(back.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+button{
+  background: rgba(3, 3, 3, 0.36);
+  border-radius: 6px;
+  border-color: white;
+  height: 40px;
+  width: 130px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 250px
+}
+
+label{
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 30%;
+    float: left;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    color: white;
+    margin-right: 15px;
+
+}
+
+select{
+  /*position: relative;*/
+  width: 62.3%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  background: rgba(3, 3, 3, 0.36);
+  border-radius: 6px;
+  border: none;
+  padding: 8px;
+  display: block;
+}
+
+/* Login container */
+#container{
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-left: 40px;
+  padding-top: 10px;
+  width: 675px;
+  height: 675px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.54);
+  box-shadow: 1px 1px 50px #000;
+}
+
+/* Heading */
+h1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: #ddd;
+  text-shadow: 3px 3px 10px #000;
+}
+
+/* Inputs */
+input{
+  font-family: 'Open Sans Condensed', sans-serif;
+  /*text-decoration: none;*/
+  /*position: relative;*/
+  width: 60%;
+  display: block;
+  /*margin: 0 0 0 0;*/
+  font-size: 20px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(3, 3, 3, 0.36);
+  /*-webkit-transition: all 2s ease-in-out;*/
+  /*-moz-transition: all 2s ease-in-out;*/
+  /*-o-transition: all 2s ease-in-out;*/
+  /*transition: all 0.2s ease-in-out;*/
+}
+
+input:focus,
+select:focus{
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(3,3,3,.18);
+}
+
+/* Placeholders */
+::-webkit-input-placeholder {
+   color: #ddd;  }
+:-moz-placeholder { /* Firefox 18- */
+   color: red;  }
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  }
+:-ms-input-placeholder {
+   color: #333;  }
+
